@@ -62,7 +62,7 @@ class MainActivity : ComponentActivity() {
                                 }
 
                                 override fun onFailure(p0: Call<LoginResponse>, p1: Throwable) {
-                                    Log.i("Entrou no onFailure", "Ok")
+                                    Log.i("Entrou no onFailure", "Entrou no onFailure")
                                 }
                             })
                         })
@@ -78,11 +78,6 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
-/*
-* user: camp@ioasys.com.br
-* password: tph4hyk!BZC2txm*mcb
-* */
 
 /*
 * enterTransition = {

@@ -10,14 +10,25 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.CheckCircle
+import androidx.compose.material.icons.filled.Delete
+import androidx.compose.material.icons.filled.Info
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Checkbox
 import androidx.compose.material3.CheckboxDefaults
+import androidx.compose.material3.DismissDirection
+import androidx.compose.material3.DismissValue
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Icon
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.OutlinedTextFieldDefaults
+import androidx.compose.material3.SwipeToDismiss
 import androidx.compose.material3.Text
+import androidx.compose.material3.rememberDismissState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateListOf
@@ -30,11 +41,11 @@ import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.camp_android.ui.theme.BackgroundDeleteColor
 import com.example.camp_android.ui.theme.PinkButton
 import com.example.camp_android.ui.theme.PinkIoasys
 import com.example.camp_android.ui.theme.Poppins
@@ -47,32 +58,43 @@ fun TaskItem(taskName: String) {
         mutableStateOf(false)
     }
 
-    Row (
+    Row(
         modifier = Modifier
             .fillMaxWidth()
-            .background(color = Color.Transparent)
+            .background(color = Color.White)
             .padding(top = 20.dp, start = 20.dp, end = 20.dp),
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.SpaceBetween
-    ){
-        Box(modifier = Modifier
-            .background(color = PinkIoasys, shape = CircleShape)
-            .size(19.dp),
-            contentAlignment = Alignment.Center){
-            Text(text = "!", color = Color.White,
-                fontFamily = Poppins, fontWeight = FontWeight.SemiBold, textAlign = TextAlign.Center )
+    ) {
+        if (checkedState) {
+            Icon(
+                imageVector = Icons.Default.CheckCircle, contentDescription = "Ícone de check",
+                tint = PinkIoasys
+            )
+        } else {
+            Icon(
+                imageVector = Icons.Default.Info, contentDescription = "Ícone de informação",
+                tint = PinkIoasys
+            )
         }
 
-        Text(text = taskName, color = TaskText,
-            fontFamily = Poppins, fontSize = 14.sp)
+        Text(
+            text = taskName, color = TaskText,
+            fontFamily = Poppins, fontSize = 14.sp,
+            modifier = Modifier
+                .fillMaxWidth(0.8f)
+        )
 
-        Checkbox(checked = checkedState, onCheckedChange = { checkedState = it  },
+        Checkbox(
+            checked = checkedState,
+            onCheckedChange = { checkedState = it },
             colors = CheckboxDefaults.colors(
                 uncheckedColor = PinkIoasys,
                 checkedColor = PinkIoasys,
                 checkmarkColor = Color.White
             ),
-            modifier = Modifier.size(20.dp))
+            modifier = Modifier.size(18.dp)
+        )
     }
 }
 
@@ -82,69 +104,130 @@ fun TasksListScreen() {
         mutableStateOf("")
     }
 
-    Column (
+    val list = remember { mutableStateListOf<String>() }
+
+    Column(
         modifier = Modifier
             .fillMaxSize()
             .background(color = Color.White)
     ) {
-        
-        Row (
+
+        Row(
             modifier = Modifier
                 .fillMaxWidth()
                 .background(color = PinkIoasys)
                 .padding(20.dp),
-            horizontalArrangement = Arrangement.End,
+            horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.CenterVertically
-        ){
-            Text(text = "Lista de Tarefas", color = Color.White,
-                fontSize = 14.sp, fontFamily = Poppins,
+        ) {
+
+            Box(modifier = Modifier.size(40.dp)) {}
+
+            Text(
+                text = "Lista de Tarefas", color = Color.White,
+                fontSize = 14.sp, fontFamily = Poppins, textAlign = TextAlign.Center,
                 modifier = Modifier
-                    .padding(end = 75.dp))
+                    .padding(0.dp)
+            )
 
             val image = painterResource(id = R.drawable.logo_home)
-            Image(painter = image, contentDescription = "Ícone clicável para voltar para home",
-                Modifier.size(40.dp))
+            Image(
+                painter = image, contentDescription = "Ícone clicável para voltar para home",
+                Modifier.size(40.dp)
+            )
         }
 
-        Row (
+        Row(
             modifier = Modifier
                 .fillMaxWidth()
                 .background(color = Color.Transparent)
                 .padding(top = 20.dp, start = 20.dp, end = 20.dp),
             horizontalArrangement = Arrangement.SpaceAround,
             verticalAlignment = Alignment.CenterVertically
-        ){
+        ) {
             OutlinedTextField(value = newTask,
                 colors = OutlinedTextFieldDefaults.colors(
                     unfocusedBorderColor = Color.Transparent,
                     focusedBorderColor = Color.Transparent,
                 ),
                 onValueChange = {
-                                newTask = it
+                    newTask = it
                 },
                 label = {
-                    Text(text = "Nova tarefa", fontSize = 12.sp,
-                        color = PinkIoasys)
+                    Text(
+                        text = "Nova tarefa", fontSize = 12.sp,
+                        color = PinkIoasys
+                    )
                 })
             Button(
-                onClick = {  },
+                onClick = {
+                    list.add(newTask)
+                    newTask = ""
+                          },
                 shape = RectangleShape,
                 colors = ButtonDefaults.buttonColors(
                     containerColor = PinkButton,
                 ),
                 modifier = Modifier.shadow(elevation = 5.dp)
-                ) {
-                Text(text = "ADD", modifier = Modifier.fillMaxWidth(),
-                    fontSize = 12.sp, textAlign = TextAlign.Center)
+            ) {
+                Text(
+                    text = "ADD", modifier = Modifier.fillMaxWidth(),
+                    fontSize = 12.sp, textAlign = TextAlign.Center
+                )
             }
         }
 
-        TaskItem(taskName = "Aprender Dart")
-        TaskItem(taskName = "Aprender Flutter")
-        TaskItem(taskName = "Criar Apps incríveis")
 
+        LazyColumn {
+            items(items = list, key = { it }) {task ->
+                DismissContainer(onDelete = { list -= task }) {
+                    TaskItem(taskName = task)
+                }
+            }
+        }
     }
 
+}
+
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+private fun DismissContainer(
+    onDelete: () -> Unit,
+    content: @Composable () -> Unit
+) {
+    val state = rememberDismissState(
+        confirmValueChange = { value ->
+            if (value == DismissValue.DismissedToEnd) {
+                onDelete()
+                true
+            } else {
+                false
+            }
+        }
+    )
+    
+    SwipeToDismiss(
+        state = state,
+        background = { BackgroudDelete() },
+        dismissContent = { content() },
+        directions = setOf(DismissDirection.StartToEnd)
+    )
+}
+
+@Composable
+fun BackgroudDelete() {
+    Row(modifier = Modifier
+        .fillMaxWidth()
+        .padding(top = 20.dp)
+        .background(color = BackgroundDeleteColor),
+        horizontalArrangement = Arrangement.Start
+    ) {
+        Icon(imageVector = Icons.Default.Delete,
+            contentDescription = "Ícone de lixeira",
+            tint = Color.White,
+            modifier = Modifier.padding(start = 26.dp))
+    }
 }
 
 

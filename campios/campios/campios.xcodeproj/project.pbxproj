@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		047D0DD62BD816B6004A0597 /* campiosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047D0DD52BD816B6004A0597 /* campiosApp.swift */; };
+		047D0DD82BD816B6004A0597 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047D0DD72BD816B6004A0597 /* LoginView.swift */; };
+		047D0DDA2BD816B7004A0597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047D0DD92BD816B7004A0597 /* Assets.xcassets */; };
+		047D0DDD2BD816B7004A0597 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047D0DDC2BD816B7004A0597 /* Preview Assets.xcassets */; };
+		047D0DE72BD816B7004A0597 /* campiosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047D0DE62BD816B7004A0597 /* campiosTests.swift */; };
+		047D0DF12BD816B7004A0597 /* campiosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047D0DF02BD816B7004A0597 /* campiosUITests.swift */; };
+		047D0DF32BD816B7004A0597 /* campiosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047D0DF22BD816B7004A0597 /* campiosUITestsLaunchTests.swift */; };
+		047D0E002BD830E7004A0597 /* InputLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047D0DFF2BD830E7004A0597 /* InputLoginView.swift */; };
+		047D0E022BD840C0004A0597 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047D0E012BD840C0004A0597 /* LoginViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		047D0DE32BD816B7004A0597 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 047D0DCA2BD816B6004A0597 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 047D0DD12BD816B6004A0597;
+			remoteInfo = campios;
+		};
+		047D0DED2BD816B7004A0597 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 047D0DCA2BD816B6004A0597 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 047D0DD12BD816B6004A0597;
+			remoteInfo = campios;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		047D0DD22BD816B6004A0597 /* campios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = campios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		047D0DD52BD816B6004A0597 /* campiosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = campiosApp.swift; sourceTree = "<group>"; };
+		047D0DD72BD816B6004A0597 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		047D0DD92BD816B7004A0597 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		047D0DDC2BD816B7004A0597 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		047D0DE22BD816B7004A0597 /* campiosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = campiosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		047D0DE62BD816B7004A0597 /* campiosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = campiosTests.swift; sourceTree = "<group>"; };
+		047D0DEC2BD816B7004A0597 /* campiosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = campiosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		047D0DF02BD816B7004A0597 /* campiosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = campiosUITests.swift; sourceTree = "<group>"; };
+		047D0DF22BD816B7004A0597 /* campiosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = campiosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		047D0DFF2BD830E7004A0597 /* InputLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputLoginView.swift; sourceTree = "<group>"; };
+		047D0E012BD840C0004A0597 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		047D0DCF2BD816B6004A0597 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047D0DDF2BD816B7004A0597 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047D0DE92BD816B7004A0597 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		047D0DC92BD816B6004A0597 = {
+			isa = PBXGroup;
+			children = (
+				047D0DD42BD816B6004A0597 /* campios */,
+				047D0DE52BD816B7004A0597 /* campiosTests */,
+				047D0DEF2BD816B7004A0597 /* campiosUITests */,
+				047D0DD32BD816B6004A0597 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		047D0DD32BD816B6004A0597 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				047D0DD22BD816B6004A0597 /* campios.app */,
+				047D0DE22BD816B7004A0597 /* campiosTests.xctest */,
+				047D0DEC2BD816B7004A0597 /* campiosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		047D0DD42BD816B6004A0597 /* campios */ = {
+			isa = PBXGroup;
+			children = (
+				047D0DD52BD816B6004A0597 /* campiosApp.swift */,
+				047D0DD72BD816B6004A0597 /* LoginView.swift */,
+				047D0DD92BD816B7004A0597 /* Assets.xcassets */,
+				047D0DDB2BD816B7004A0597 /* Preview Content */,
+				047D0DFF2BD830E7004A0597 /* InputLoginView.swift */,
+				047D0E012BD840C0004A0597 /* LoginViewModel.swift */,
+			);
+			path = campios;
+			sourceTree = "<group>";
+		};
+		047D0DDB2BD816B7004A0597 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				047D0DDC2BD816B7004A0597 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		047D0DE52BD816B7004A0597 /* campiosTests */ = {
+			isa = PBXGroup;
+			children = (
+				047D0DE62BD816B7004A0597 /* campiosTests.swift */,
+			);
+			path = campiosTests;
+			sourceTree = "<group>";
+		};
+		047D0DEF2BD816B7004A0597 /* campiosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				047D0DF02BD816B7004A0597 /* campiosUITests.swift */,
+				047D0DF22BD816B7004A0597 /* campiosUITestsLaunchTests.swift */,
+			);
+			path = campiosUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		047D0DD12BD816B6004A0597 /* campios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 047D0DF62BD816B7004A0597 /* Build configuration list for PBXNativeTarget "campios" */;
+			buildPhases = (
+				047D0DCE2BD816B6004A0597 /* Sources */,
+				047D0DCF2BD816B6004A0597 /* Frameworks */,
+				047D0DD02BD816B6004A0597 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = campios;
+			productName = campios;
+			productReference = 047D0DD22BD816B6004A0597 /* campios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		047D0DE12BD816B7004A0597 /* campiosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 047D0DF92BD816B7004A0597 /* Build configuration list for PBXNativeTarget "campiosTests" */;
+			buildPhases = (
+				047D0DDE2BD816B7004A0597 /* Sources */,
+				047D0DDF2BD816B7004A0597 /* Frameworks */,
+				047D0DE02BD816B7004A0597 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				047D0DE42BD816B7004A0597 /* PBXTargetDependency */,
+			);
+			name = campiosTests;
+			productName = campiosTests;
+			productReference = 047D0DE22BD816B7004A0597 /* campiosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		047D0DEB2BD816B7004A0597 /* campiosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 047D0DFC2BD816B7004A0597 /* Build configuration list for PBXNativeTarget "campiosUITests" */;
+			buildPhases = (
+				047D0DE82BD816B7004A0597 /* Sources */,
+				047D0DE92BD816B7004A0597 /* Frameworks */,
+				047D0DEA2BD816B7004A0597 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				047D0DEE2BD816B7004A0597 /* PBXTargetDependency */,
+			);
+			name = campiosUITests;
+			productName = campiosUITests;
+			productReference = 047D0DEC2BD816B7004A0597 /* campiosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		047D0DCA2BD816B6004A0597 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					047D0DD12BD816B6004A0597 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					047D0DE12BD816B7004A0597 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 047D0DD12BD816B6004A0597;
+					};
+					047D0DEB2BD816B7004A0597 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 047D0DD12BD816B6004A0597;
+					};
+				};
+			};
+			buildConfigurationList = 047D0DCD2BD816B6004A0597 /* Build configuration list for PBXProject "campios" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 047D0DC92BD816B6004A0597;
+			productRefGroup = 047D0DD32BD816B6004A0597 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				047D0DD12BD816B6004A0597 /* campios */,
+				047D0DE12BD816B7004A0597 /* campiosTests */,
+				047D0DEB2BD816B7004A0597 /* campiosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		047D0DD02BD816B6004A0597 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047D0DDD2BD816B7004A0597 /* Preview Assets.xcassets in Resources */,
+				047D0DDA2BD816B7004A0597 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047D0DE02BD816B7004A0597 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047D0DEA2BD816B7004A0597 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		047D0DCE2BD816B6004A0597 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047D0E022BD840C0004A0597 /* LoginViewModel.swift in Sources */,
+				047D0DD82BD816B6004A0597 /* LoginView.swift in Sources */,
+				047D0DD62BD816B6004A0597 /* campiosApp.swift in Sources */,
+				047D0E002BD830E7004A0597 /* InputLoginView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047D0DDE2BD816B7004A0597 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047D0DE72BD816B7004A0597 /* campiosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047D0DE82BD816B7004A0597 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047D0DF12BD816B7004A0597 /* campiosUITests.swift in Sources */,
+				047D0DF32BD816B7004A0597 /* campiosUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		047D0DE42BD816B7004A0597 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 047D0DD12BD816B6004A0597 /* campios */;
+			targetProxy = 047D0DE32BD816B7004A0597 /* PBXContainerItemProxy */;
+		};
+		047D0DEE2BD816B7004A0597 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 047D0DD12BD816B6004A0597 /* campios */;
+			targetProxy = 047D0DED2BD816B7004A0597 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		047D0DF42BD816B7004A0597 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		047D0DF52BD816B7004A0597 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		047D0DF72BD816B7004A0597 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"campios/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = camp2024.campios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		047D0DF82BD816B7004A0597 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"campios/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = camp2024.campios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		047D0DFA2BD816B7004A0597 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = camp2024.campiosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/campios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/campios";
+			};
+			name = Debug;
+		};
+		047D0DFB2BD816B7004A0597 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = camp2024.campiosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/campios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/campios";
+			};
+			name = Release;
+		};
+		047D0DFD2BD816B7004A0597 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = camp2024.campiosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = campios;
+			};
+			name = Debug;
+		};
+		047D0DFE2BD816B7004A0597 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = camp2024.campiosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = campios;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		047D0DCD2BD816B6004A0597 /* Build configuration list for PBXProject "campios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047D0DF42BD816B7004A0597 /* Debug */,
+				047D0DF52BD816B7004A0597 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		047D0DF62BD816B7004A0597 /* Build configuration list for PBXNativeTarget "campios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047D0DF72BD816B7004A0597 /* Debug */,
+				047D0DF82BD816B7004A0597 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		047D0DF92BD816B7004A0597 /* Build configuration list for PBXNativeTarget "campiosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047D0DFA2BD816B7004A0597 /* Debug */,
+				047D0DFB2BD816B7004A0597 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		047D0DFC2BD816B7004A0597 /* Build configuration list for PBXNativeTarget "campiosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047D0DFD2BD816B7004A0597 /* Debug */,
+				047D0DFE2BD816B7004A0597 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 047D0DCA2BD816B6004A0597 /* Project object */;
+}

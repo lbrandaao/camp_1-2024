@@ -33,34 +33,6 @@ import com.example.camp_android.ui.theme.PinkIoasys
 import com.example.camp_android.ui.theme.Poppins
 
 
-/*
-* FOCAR EM FUNCIONALIDADE DEPOIS AJEITA DETALHES VISUAIS
-* Fazer próxima tela
-* Persistência de dados
-* LazyColumn
-* API
-* GitHub
-*
-*
-* LoginScreen: centralização do texto do textfield, barrinha em cima com infos do celular
-* TasksListScreen:
-*   1) Adicionar tarefas dinamicamente com listas mutáveis
-*   2) Arrastar para excluir tarefa
-*   3) Encostar texto no ícone da tarefa
-*   4) Sublinhar TextField
-*   5) Algo melhor que Row pro Top Bar?
-*   6) Centralizar texto do top bar com ícone "encostado no final"
-*   7) Usar ícone em vez de imagem na TopBar
-*   8) Centralizar melhor o ícone da tarefa
-*
-*
-*
-*
-*
-* */
-
-
-
 @Composable
 fun LogoImage() {
     val image = painterResource(id = R.drawable.logo_ioasys_1)
